@@ -15,5 +15,10 @@ namespace MovieRental.Controllers
             var movie = new Movie() { Name = "shrek!" };
             return View(movie);
         }
+        public ActionResult Random1()
+        {
+            var movie = new Movie() { Name = "Jack reacher!" };
+            return View(movie);
+        }
     }
 }
