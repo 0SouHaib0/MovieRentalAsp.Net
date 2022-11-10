@@ -113,3 +113,6 @@ C:\Users\User\Documents\3i\S1\.Net\MovieRental\MovieRental\obj\Debug\MovieRental
 C:\Users\User\Documents\3i\S1\.Net\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.updateMembership.resources
 C:\Users\User\Documents\3i\S1\.Net\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.addGenre.resources
 C:\Users\User\Documents\3i\S1\.Net\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.addDifferentGenre.resources
+C:\Users\User\Documents\3i\S1\.Net\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.addSomeAnnotationToMovie.resources
+C:\Users\User\Documents\3i\S1\.Net\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.bug1.resources
+C:\Users\User\Documents\3i\S1\.Net\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.fixingBug2.resources
