@@ -14,10 +14,12 @@ namespace MovieRental.App_Start
         public MappingProfile()
         {
             CreateMap<Customer, CustomerDto>();
-            CreateMap<CustomerDto, Customer>().ForMember(c => c.Id, opt => opt.Ignore()); //"Hey, don't worry about the id, don't map that." 
             CreateMap<Movie, MovieDto>();
+            CreateMap<MembershipType, MembershipTypeDto>();
+            CreateMap<Genre, GenreDto>();
+
             CreateMap<MovieDto, Movie>().ForMember(c => c.Id, opt => opt.Ignore());
-          
+            CreateMap<CustomerDto, Customer>().ForMember(c => c.Id, opt => opt.Ignore()); //"Hey, don't worry about the id, don't map that." 
         }
     }
 }

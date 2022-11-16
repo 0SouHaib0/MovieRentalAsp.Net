@@ -24,9 +24,10 @@ namespace MovieRental.Controllers
         }
         public ActionResult Index()
         {
-            var customers = _context.Customers.Include(c => c.MembershipType).ToList();
+            /*var customers = _context.Customers.Include(c => c.MembershipType).ToList();
 
-            return View(customers);
+            return View(customers);*/
+            return View();
         }
 
         public ActionResult Details(int id)
@@ -42,6 +43,7 @@ namespace MovieRental.Controllers
             var membershipTypes = _context.MembershipTypes.ToList();
             var viewModel = new CustomerViewModel
             {
+                customer=new Customer(),
                 MembershipTypes = membershipTypes
             };
             return View(viewModel);
@@ -66,6 +68,7 @@ namespace MovieRental.Controllers
         {
             if (!ModelState.IsValid)
             {
+              
                 var viewmodel = new CustomerViewModel
                 {
                     customer = customer,

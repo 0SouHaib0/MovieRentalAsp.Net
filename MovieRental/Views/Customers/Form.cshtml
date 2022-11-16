@@ -7,6 +7,9 @@
 <h2>Customer</h2>
 @using (Html.BeginForm("addOrEdit", "Customers"))
 {
+    <div class="text-danger">
+        @Html.ValidationSummary(false)
+    </div>
     <div class="form-group">
         @Html.LabelFor(m => m.customer.Name)
         @Html.TextBoxFor(m => m.customer.Name, new { @class = "form-control" })
@@ -29,7 +32,7 @@
             @Html.CheckBoxFor(m => m.customer.IsSubscribedToNewsletter)  Subscribe to newsletter
         </label>
     </div>
-    @Html.HiddenFor(m => m.customer.Id)
+    @Html.HiddenFor(m => m.customer.Id ,new {@value="0" })
     @Html.AntiForgeryToken()
     <button type="submit" class="btn btn-primary">Save</button>
 
