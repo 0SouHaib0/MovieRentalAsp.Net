@@ -131,3 +131,5 @@ C:\Users\User\Documents\3i\S1\.Net\MovieRental\MovieRental\bin\AutoMapper.xml
 C:\Users\User\Documents\3i\S1\.Net\MovieRental\MovieRental\bin\AutoMapper.Extensions.Microsoft.DependencyInjection.pdb
 C:\Users\User\Documents\3i\S1\.Net\MovieRental\MovieRental\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
 C:\Users\User\Documents\3i\S1\.Net\MovieRental\MovieRental\bin\System.ValueTuple.xml
+C:\Users\User\Documents\3i\S1\.Net\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.adminUser.resources
+C:\Users\User\Documents\3i\S1\.Net\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.addPropertyToApplicationUser.resources

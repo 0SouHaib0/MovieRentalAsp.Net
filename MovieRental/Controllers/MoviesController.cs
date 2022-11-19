@@ -25,7 +25,9 @@ namespace MovieRental.Controllers
         {
             /* var movies = _context.Movies.Include(m=>m.Genre).ToList();
              return View(movies);*/
-            return View();
+            if (User.IsInRole(RoleName.MovieManager))
+                     return View();
+            return View("List");
         }
 
         public ActionResult Details(int id)
@@ -36,6 +38,7 @@ namespace MovieRental.Controllers
             return View(movie);
         }
 
+        [Authorize(Roles =RoleName.MovieManager)]
         public ActionResult FormMovie()
         {
             var genres = _context.Genres.ToList();
